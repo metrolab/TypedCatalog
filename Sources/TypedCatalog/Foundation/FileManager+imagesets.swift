@@ -14,9 +14,9 @@ extension FileManager {
         return subpaths
             .filter {
                 $0.hasSuffix("imageset")
-        }
-        .map {
-            normalize(($0 as NSString).lastPathComponent.components(separatedBy: ".")[0])
-        }
+            }
+            .map {
+                normalize(($0 as NSString).lastPathComponent.components(separatedBy: ".")[0])
+            }
     }
 }

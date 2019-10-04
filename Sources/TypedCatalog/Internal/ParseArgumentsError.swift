@@ -13,7 +13,7 @@ enum ParseArgumentsError: Int, Swift.Error, CustomNSError {
         return rawValue
     }
 
-    var errorUserInfo: [String : Any] {
+    var errorUserInfo: [String: Any] {
         return [:]
     }
 
